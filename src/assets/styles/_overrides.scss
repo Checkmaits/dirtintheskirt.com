@@ -1,0 +1,200 @@
+@use "colors" as c;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: c.$body-text;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: "Oswald", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: c.$headings;
+}
+
+a:not(.btn):not(.header-nav a):not(.icon-block-box-subtitle) {
+  color: c.$primary;
+  transition: color 0.3s ease;
+  font-weight: bold;
+
+  &:hover {
+    color: c.$primary-alt;
+  }
+
+  &:active {
+    color: c.$primary-alt-darker;
+  }
+}
+
+// Text Overrides
+.text {
+  &-primary {
+    color: c.$primary !important;
+  }
+
+  &-primary-light {
+    color: c.$primary-light !important;
+  }
+
+  &-secondary,
+  &-body-text {
+    color: c.$body-text !important;
+  }
+
+  &-dark,
+  &-headings {
+    color: c.$headings !important;
+  }
+
+  &-light {
+    color: c.$light !important;
+  }
+}
+
+// Button Overrides
+.btn {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.5rem;
+
+  &-primary {
+    color: white;
+    background-color: c.$primary !important;
+    border-color: c.$primary !important;
+
+    &:hover {
+      background-color: c.$primary-alt !important;
+      border-color: c.$primary-alt !important;
+    }
+
+    &:active {
+      background-color: c.$primary-alt-darker !important;
+      border-color: c.$primary-alt-darker !important;
+    }
+  }
+
+  &-primary-light {
+    color: white;
+    background-color: c.$primary-light !important;
+    border-color: c.$primary-light !important;
+
+    &:hover {
+      background-color: c.$primary-light-alt !important;
+      border-color: c.$primary-light-alt !important;
+    }
+
+    &:active {
+      background-color: c.$primary-light-alt-darker !important;
+      border-color: c.$primary-light-alt-darker !important;
+    }
+  }
+
+  &-dark {
+    color: white;
+    background-color: c.$headings !important;
+    border-color: c.$headings !important;
+
+    &:hover {
+      background-color: c.$primary !important;
+      border-color: c.$primary !important;
+    }
+
+    &:active {
+      background-color: c.$primary-alt !important;
+      border-color: c.$primary-alt !important;
+    }
+  }
+
+  &-outline {
+    &-primary {
+      color: c.$primary;
+      background-color: transparent !important;
+      border-width: 2px;
+      border-color: c.$primary !important;
+
+      &:hover {
+        color: white !important;
+        background-color: c.$primary !important;
+        border-color: c.$primary !important;
+      }
+
+      &:active {
+        color: white;
+        background-color: c.$primary-alt !important;
+        border-color: c.$primary-alt !important;
+      }
+    }
+
+    &-primary-light {
+      color: c.$primary-light;
+      background-color: transparent !important;
+      border-width: 2px;
+      border-color: c.$primary-light !important;
+
+      &:hover {
+        color: white !important;
+        background-color: c.$primary-light !important;
+        border-color: c.$primary-light !important;
+      }
+
+      &:active {
+        color: white;
+        background-color: c.$primary-light-alt !important;
+        border-color: c.$primary-light-alt !important;
+      }
+    }
+  }
+}
+
+.border {
+  &-top,
+  &-bottom,
+  &-start,
+  &-end {
+    border-color: c.$borders !important;
+  }
+
+  &-primary {
+    border-color: c.$primary !important;
+  }
+
+  &-primary-light {
+    border-color: c.$primary-light !important;
+  }
+
+  &-dark {
+    border-color: c.$headings !important;
+  }
+}
+
+.bg {
+  &-primary {
+    background-color: c.$primary !important;
+  }
+
+  &-primary-light {
+    background-color: c.$primary-light !important;
+  }
+
+  &-light {
+    background-color: c.$light !important;
+  }
+
+  &-dark {
+    background-color: c.$headings !important;
+  }
+}

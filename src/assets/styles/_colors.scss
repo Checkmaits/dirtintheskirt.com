@@ -1,0 +1,12 @@
+@use "sass:color";
+
+$primary: #5a0073;
+$primary-alt: color.adjust($primary, $lightness: -5%);
+$primary-alt-darker: color.adjust($primary, $lightness: -10%);
+$primary-light: #c1b9d8;
+$primary-light-alt: color.adjust($primary-light, $lightness: -5%);
+$primary-light-alt-darker: color.adjust($primary-light, $lightness: -10%);
+$body-text: #333333;
+$headings: #1a1a1a;
+$borders: #e5e5e5;
+$light: #fafafa;

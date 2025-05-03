@@ -1,0 +1,17 @@
+# IDE-specific
+.idea/
+.vscode/
+
+# Node.js
+node_modules/
+package-lock.json
+.env
+
+# Vite
+dist/
+vite.config.js
+
+# Vercel
+vercel/
+.vercel/
+vercel.json
