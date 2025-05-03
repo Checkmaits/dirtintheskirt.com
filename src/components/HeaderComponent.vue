@@ -4,21 +4,19 @@
   <header class="header">
     <div class="container-fluid container-lg py-3">
       <div class="d-flex align-items-center justify-content-between">
-        <a aria-current="page" href="/" class="router-link-active router-link-exact-active header-logo">
+        <router-link :to="{ name: 'HomeView' }" class="header-logo">
           <img src="../assets/images/dits-logo.png" alt="Dirt in the Skirt (2025) Logo" />
-        </a>
+        </router-link>
         <div class="d-flex align-items-center gap-4">
           <nav class="header-nav d-none d-lg-flex">
-            <a aria-current="page" href="/" class="router-link-active router-link-exact-active">Home</a>
-            <a aria-current="page" href="/#about-section" class="router-link-active router-link-exact-active">About</a>
-            <a aria-current="page" href="/#herstory-section" class="router-link-active router-link-exact-active">"Herstory"</a>
-            <a aria-current="page" href="/#sponsors-section" class="router-link-active router-link-exact-active">Sponsors</a>
-            <a aria-current="page" href="/#contact-section" class="router-link-active router-link-exact-active">Contact</a>
-            <a aria-current="page" href="https://www.wsbn.tv/channel-29-slow-pitch-ball/" class="router-link-active router-link-exact-active">
-              Watch Live
-            </a>
+            <router-link :to="{ name: 'HomeView' }">Home</router-link>
+            <router-link :to="{ path: '/', hash: '#about-section' }">About</router-link>
+            <router-link :to="{ path: '/', hash: '#herstory-section' }">"Herstory"</router-link>
+            <router-link :to="{ path: '/', hash: '#sponsors-section' }">Sponsors</router-link>
+            <router-link :to="{ path: '/', hash: '#contact-section' }">Contact</router-link>
+            <a aria-current="page" href="https://www.wsbn.tv/channel-29-slow-pitch-ball/">Watch Live</a>
           </nav>
-          <a href="/sponsor" class="btn btn-outline-primary-light d-none d-md-block ms-3"> SPONSOR </a>
+          <router-link :to="{ name: 'SponsorView' }" class="btn btn-outline-primary-light d-none d-md-block ms-3"> SPONSOR </router-link>
           <button class="mobile-nav-toggler d-flex d-lg-none">
             <i class="bi bi-list"></i>
           </button>
