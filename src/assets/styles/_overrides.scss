@@ -27,7 +27,7 @@ h6,
   color: c.$headings;
 }
 
-a:not(.btn):not(.header-nav a):not(.icon-block-box-subtitle) {
+a:not(.btn):not(.header-nav a):not(.mobile-nav-list a):not(.icon-block-box-subtitle) {
   color: c.$primary;
   transition: color 0.3s ease;
   font-weight: bold;
