@@ -7,7 +7,7 @@ const sponsorsError = ref(null);
 const sponsorsLoading = ref(true);
 
 onMounted(async () => {
-  const response = await fetch("https://api.dirtintheskirt.com/api/v1/sponsors");
+  const response = await fetch(`${import.meta.env.VITE_APP_API_URL}/api/v1/sponsors`);
   const responseData = await response.json();
   if (!response.ok) {
     sponsorsError.value = responseData.message;

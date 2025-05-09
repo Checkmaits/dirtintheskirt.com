@@ -6,6 +6,7 @@ import AboutSectionComponent from "../components/home/AboutSectionComponent.vue"
 import HistorySectionComponent from "../components/home/HistorySectionComponent.vue";
 import SponsorSectionComponent from "../components/home/SponsorSectionComponent.vue";
 import ContactSectionComponent from "../components/home/ContactSectionComponent.vue";
+import ReviewsSectionComponent from "../components/home/ReviewsSectionComponent.vue";
 
 document.title = "Dirt in the Skirt 2025 | All-Women's Vintage-Inspired Slo-Pitch Tournament";
 </script>
@@ -28,6 +29,8 @@ document.title = "Dirt in the Skirt 2025 | All-Women's Vintage-Inspired Slo-Pitc
   <HistorySectionComponent />
   <SpacerComponent />
   <SponsorSectionComponent />
+  <SpacerComponent />
+  <ReviewsSectionComponent />
   <SpacerComponent />
   <ContactSectionComponent />
 </template>

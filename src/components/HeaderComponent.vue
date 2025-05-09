@@ -22,7 +22,9 @@ function toggleMobileNav() {
             <router-link :to="{ path: '/', hash: '#herstory-section' }">"Herstory"</router-link>
             <router-link :to="{ path: '/', hash: '#sponsors-section' }">Sponsors</router-link>
             <router-link :to="{ path: '/', hash: '#contact-section' }">Contact</router-link>
-            <a target="_blank" href="https://www.wsbn.tv/channel-29-slow-pitch-ball/">Watch Live</a>
+            <a target="_blank" href="https://www.wsbn.tv/channel-29-slow-pitch-ball/">
+              <span class="fw-bold text-primary-light" style="font-size: 0.9rem">Watch Live</span>
+            </a>
           </nav>
           <router-link :to="{ name: 'SponsorView' }" class="btn btn-outline-primary-light ms-0 ms-lg-3"> SPONSOR </router-link>
           <button @click="toggleMobileNav" class="mobile-nav-toggler d-flex d-lg-none">
@@ -48,7 +50,9 @@ function toggleMobileNav() {
         <router-link @click="toggleMobileNav" :to="{ path: '/', hash: '#herstory-section' }">"Herstory"</router-link>
         <router-link @click="toggleMobileNav" :to="{ path: '/', hash: '#sponsors-section' }">Sponsors</router-link>
         <router-link @click="toggleMobileNav" :to="{ path: '/', hash: '#contact-section' }">Contact</router-link>
-        <a @click="toggleMobileNav" target="_blank" href="https://www.wsbn.tv/channel-29-slow-pitch-ball/">Watch Live</a>
+        <a @click="toggleMobileNav" target="_blank" href="https://www.wsbn.tv/channel-29-slow-pitch-ball/">
+          <span class="fw-bold">Watch Live</span>
+        </a>
       </nav>
       <div class="mobile-nav-footer">
         <p class="mb-0">&copy; Silver Compass Consulting, 2025</p>

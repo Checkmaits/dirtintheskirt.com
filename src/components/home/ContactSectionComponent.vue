@@ -41,7 +41,7 @@ async function handleSubmit() {
 </script>
 
 <template>
-  <section id="contact-section" class="bg-light" style="padding: 5rem 0px">
+  <section id="contact-section">
     <div class="container-fluid container-lg">
       <div class="row align-items-start gx-5">
         <div class="col-12 col-md col-lg">

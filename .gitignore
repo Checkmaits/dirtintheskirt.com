@@ -13,8 +13,8 @@ vite.config.js
 
 # Vercel
 vercel/
-.vercel/
-vercel.json
+dist/.vercel/
+dist/vercel.json
 
 # MacOS
 .DS_Store

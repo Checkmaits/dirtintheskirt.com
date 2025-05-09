@@ -26,7 +26,6 @@ const teams = Object.entries(imageFiles).map(([path, src]) => {
 
 .team-banner-wrapper {
   overflow: hidden;
-  background-color: c.$light;
   padding: 1rem 0;
 }
 

@@ -41,7 +41,6 @@ onMounted(async () => {
   <AboutSponsorSectionComponent />
   <SpacerComponent />
   <SponsorsTiersSection />
-  <SpacerComponent />
 </template>
 
 <style scoped lang="scss">

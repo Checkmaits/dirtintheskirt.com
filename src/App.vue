@@ -1,6 +1,7 @@
 <script setup>
 import HeaderComponent from "./components/HeaderComponent.vue";
 import TeamBannerComponent from "./components/TeamBannerComponent.vue";
+import SpacerComponent from "./components/SpacerComponent.vue";
 </script>
 
 <template>
@@ -8,6 +9,7 @@ import TeamBannerComponent from "./components/TeamBannerComponent.vue";
   <main class="main">
     <router-view />
   </main>
+  <SpacerComponent />
   <TeamBannerComponent />
   <footer class="footer bg-dark">
     <div class="container text-center py-2">
